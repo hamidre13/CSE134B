@@ -69,5 +69,43 @@
       <param name="PlayCount" value="0">
 	  </object>
   </section>
+  <section>
+    <h2>Video</h2>
+		<p>Basic</p>
+    <video controls>
+		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
+		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+    </video>
+		<p>Muted</p>
+    <video controls muted>
+		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
+		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+    </video>
+		<p>Looped</p>
+    <video controls loop>
+		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
+		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+    </video>
+  </section>
+  <section>
+    <h2>Audio</h2>
+		<p>Basic</p>
+    <audio controls>
+		  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
+    </audio>
+		<p>Preload</p>
+    <audio preload>
+		  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
+    </audio>
+  </section>
+  <section>
+    <h2>Image Map</h2>
+		<img src="http://www.w3.org/TR/html5/images/sample-usemap.png" usemap="#shapes" alt="">
+	  <map name="shapes">
+			<area shape=rect coords="50,50,100,100" onclick="alert('HOLE!');">
+			<area shape=poly coords="450,25,435,60,400,75,435,90,450,125,465,90,500,75,465,60"
+        onclick="alert('STAR!');">
+		</map> 
+  </section>
 </body>
 </html>
