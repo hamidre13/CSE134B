@@ -2,135 +2,156 @@
 
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Embedded Examples</title>
-	<meta name="forms" content="examples for cse 134b">
+  <meta charset="utf-8">
+  <title>Embedded Examples</title>
+  <meta name="forms" content="examples for cse 134b">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>Embedded Content</h1>
-  <section>
-		<h2>Images</h2>
+  <header>
+    <h1>Embedded Content</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="#img_info">&lt;img&gt;</a></li>
+        <li><a href="#iframe_info">&lt;iframe&gt;</a></li>
+        <li><a href="#embed_info">&lt;embed&gt;</a></li>
+        <li><a href="#object_info">&lt;object&gt;</a></li>
+        <li><a href="#param_info">&lt;param&gt;</a></li>
+        <li><a href="#video_info">&lt;video&gt;</a></li>
+        <li><a href="#audio_info">&lt;audio&gt;</a></li>
+        <li><a href="#video_info">&lt;source&gt;</a></li>
+        <li><a href="#video_info">&lt;track&gt;</a></li>
+        <li><a href="#map_info">&lt;map&gt;</a></li>
+        <li><a href="#map_info">&lt;area&gt;</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		<h3>Plain Image</h3>
-		<img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Smiley face." />
-		<h3>Image Link</h3>
-		<a href="http://imgur.com/P1nwVTj">
-		<img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Imagur web site">
-		</a>
+  <section>
+  <h2 id="img_info">Images</h2>
+  <h3>Plain Image</h3>
+  <img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Smiley face." />
+  <h3>Image Link</h3>
+  <a href="http://imgur.com/P1nwVTj">
+  <img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Imagur web site">
+  </a>
 
-		<h3>Image with description</h3>
-		<p>According to a recent study Firefox has a 40% browser share, Internet Explorer has 25%, Chrome has 25%, Safari has 6% and Opera has 4%.</p>
-		<p><img src="http://i.imgur.com/JE9zTLu.png" alt="Pie chart representing the data in the previous paragraph."></p>
+  <h3>Image with description</h3>
+  <p>According to a recent study Firefox has a 40% browser share, Internet Explorer has 25%, Chrome has 25%, Safari has 6% and Opera has 4%.</p>
+  <p><img src="http://i.imgur.com/JE9zTLu.png" alt="Pie chart representing the data in the previous paragraph."></p>
 
-		<h3>Image with alt description</h3>
-		<p><img src="http://i.imgur.com/S8w4HQG.png" alt="Figure 1. Distribution of Articles by Journal Category. 
-		Pie chart: Language=68%, Education=14% and Science=18%."></p>
+  <h3>Image with alt description</h3>
+  <p><img src="http://i.imgur.com/S8w4HQG.png" alt="Figure 1. Distribution of Articles by Journal Category. 
+  Pie chart: Language=68%, Education=14% and Science=18%."></p>
 
-		<h3>Image used to decorate letter</h3>
-		<p><img src="http://i.imgur.com/oKZNuEL.png" alt="O">nce upon a time and a long long time ago...
+  <h3>Image used to decorate letter</h3>
+  <p><img src="http://i.imgur.com/oKZNuEL.png" alt="O">nce upon a time and a long long time ago...
 
-		<h3>Good Job!</h3>
-		<img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Smiley face." />
-		<p>Image with Title and paragraph included</p>
+  <h3>Good Job!</h3>
+  <img src="http://i.imgur.com/P1nwVTj.jpg" width="72" height="48" alt="Smiley face." />
+  <p>Image with Title and paragraph included</p>
 
-		<h3>Example of a banner image with an empty alt description</h3>
-		<div><img src="http://i.imgur.com/Tu8pzys.png" alt="" width="400" height="30"></div>
-		<h2>PupNSud's Blog</h2>
-		<p>Welcome to my blog...</p>
-		<p>Example of a banner image with an empty alt description</p>
-		<h3>Rating Meter with individual images of filled and not filled stars</h3>
-		<p>Rating: 
-			<img src="http://i.imgur.com/nM8X9ev.jpg" width="24" height="24" alt="3 out of 5">
-			<img src="http://i.imgur.com/nM8X9ev.jpg" width="24" height="24" alt=""><img src="http://i.imgur.com/nM8X9ev.jpg"  width="24" height="24" alt="">
-			<img src="http://i.imgur.com/iQeVwds.png" width="24" height="24" alt=""><img src="http://i.imgur.com/iQeVwds.png" width="24" height="24"  alt="">
-		</p>
+  <h3>Example of a banner image with an empty alt description</h3>
+  <div><img src="http://i.imgur.com/Tu8pzys.png" alt="" width="400" height="30"></div>
+  <h2>PupNSud's Blog</h2>
+  <p>Welcome to my blog...</p>
+  <p>Example of a banner image with an empty alt description</p>
+  <h3>Rating Meter with individual images of filled and not filled stars</h3>
+  <p>Rating: 
+  <img src="http://i.imgur.com/nM8X9ev.jpg" width="24" height="24" alt="3 out of 5">
+  <img src="http://i.imgur.com/nM8X9ev.jpg" width="24" height="24" alt=""><img src="http://i.imgur.com/nM8X9ev.jpg"  width="24" height="24" alt="">
+  <img src="http://i.imgur.com/iQeVwds.png" width="24" height="24" alt=""><img src="http://i.imgur.com/iQeVwds.png" width="24" height="24"  alt="">
+  </p>
   </section>
   <section>
-    <h2>iFrames</h2>
-    <p>This is a basic iFrame</p>
-    <iframe src="form.html" ></iframe>
-    <p>New Dimensions!</p>
-    <iframe src="form.html" height="500" width="500"></iframe>
+  <h2 id="iframe_info">iFrames</h2>
+  <p>This is a basic iFrame</p>
+  <iframe src="form.html" ></iframe>
+  <p>New Dimensions!</p>
+  <iframe src="form.html" height="500" width="500"></iframe>
   </section>
   <section>
-    <h2>Embed</h2>
-    <p>This is embedded media!</p>
-		<embed width="420" height="315"
-		src="http://www.dagobah.net/flashswf/Light_Saber_Guide_v2.swf">
+  <h2 id="embed_info">Embed</h2>
+  <p>This is embedded media!</p>
+  <embed width="420" height="315"
+  src="http://www.dagobah.net/flashswf/Light_Saber_Guide_v2.swf">
   </section>
   <section>
-    <h2>Object</h2>
-    <p>This is embedded object! It's a webpage</p>
-		<object width="420" height="315" data="form.html"></object>
-    <p>Uh oh! Mismatch :-(</p>
-		<object width="420" height="315" data="form.html" type="text/css" typemustmatch></object>
-		<p>Params! No autoplay please :-)</p>
-		<object data="http://themushroomkingdom.net/sounds/wav/smw/smw_game_over.wav" type="audio/x-wav">
-      <param name="PlayCount" value="0">
-	  </object>
+  <h2 id="object_info">Object</h2>
+  <p>This is embedded object! It's a webpage</p>
+  <object width="420" height="315" data="form.html"></object>
+  <p>Uh oh! Mismatch :-(</p>
+      <object width="420" height="315" data="form.html" type="text/css" typemustmatch></object>
+      <p>Params! No autoplay please :-)</p>
+  <object data="http://themushroomkingdom.net/sounds/wav/smw/smw_game_over.wav" type="audio/x-wav">
+  <param id="param_info" name="PlayCount" value="0">
+  </object>
   </section>
   <section>
-    <h2>Video</h2>
-		<p>Basic</p>
-    <video controls>
-		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
-		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
-    </video>
-		<p>Muted</p>
-    <video controls muted>
-		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
-		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
-    </video>
-		<p>Looped</p>
-    <video controls loop>
-		  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='audio/mp4'>
-		  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
-    </video>
+  <h2 id="video_info">Video</h2>
+  <p>Basic</p>
+  <video controls>
+  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4' type='video/mp4'>
+  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+  </video>
+  <p>Muted</p>
+  <video controls muted>
+  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4'>
+  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+  </video>
+  <p>Looped</p>
+  <video controls loop>
+  <source src='http://cse134b.seodapop.com/tags/learnHTML.mp4'>
+  <track kind=captions src="idk.vtt" label="English for the Hard of Hearing">
+  </video>
   </section>
   <section>
-    <h2>Audio</h2>
-		<p>Basic</p>
-    <audio controls>
-		  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
-    </audio>
-		<p>Preload</p>
-    <audio preload="auto">
-		  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
-    </audio>
+  <h2 id="audio_info">Audio</h2>
+  <p>Basic</p>
+  <audio controls>
+  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
+  </audio>
+  <p>Preload</p>
+  <audio preload="auto">
+  <source src='http://cse134b.seodapop.com/tags/seeyouagain.mp3' type='audio/mpeg'>
+  </audio>
   </section>
   <section>
-    <h2>Image Map</h2>
-		<img src="http://www.w3.org/TR/html5/images/sample-usemap.png" usemap="#shapes" alt="">
-	  <map name="shapes">
-			<area shape=rect coords="50,50,100,100" onclick="alert('HOLE!');">
-			<area shape=poly coords="450,25,435,60,400,75,435,90,450,125,465,90,500,75,465,60"
-        onclick="alert('STAR!');">
-		</map> 
+  <h2 id="map_info">Image Map</h2>
+  <img src="http://www.w3.org/TR/html5/images/sample-usemap.png" usemap="#shapes" alt="">
+  <map name="shapes">
+  <area shape=rect coords="50,50,100,100" onclick="alert('HOLE!');">
+  <area shape=poly coords="450,25,435,60,400,75,435,90,450,125,465,90,500,75,465,60"
+  onclick="alert('STAR!');">
+  </map> 
   </section>
   <section>
-    <h2>Math</h2>
-		<math>
-      <mfrac>
-			<mrow>
-			<mo form="prefix">−</mo> <mi>b</mi>
-			<mo>±</mo>
-			<msqrt>
-			<msup> <mi>b</mi> <mn>2</mn> </msup>
-			<mo>−</mo>
-			<mn>4</mn> <mo>⁢</mo> <mi>a</mi> <mo>⁢</mo> <mi>c</mi>
-			</msqrt>
-			</mrow>
-			<mrow>
-			<mn>2</mn> <mo>⁢</mo> <mi>a</mi>
-			</mrow>
-			</mfrac>
-    </math>
-	</section>
+  <h2>Math</h2>
+  <math>
+  <mfrac>
+  <mrow>
+  <mo form="prefix">−</mo> <mi>b</mi>
+  <mo>±</mo>
+  <msqrt>
+  <msup> <mi>b</mi> <mn>2</mn> </msup>
+  <mo>−</mo>
+  <mn>4</mn> <mo>⁢</mo> <mi>a</mi> <mo>⁢</mo> <mi>c</mi>
+  </msqrt>
+  </mrow>
+  <mrow>
+  <mn>2</mn> <mo>⁢</mo> <mi>a</mi>
+  </mrow>
+  </mfrac>
+  </math>
+  </section>
   <section>
-    <h2>SVG</h2>
-		<svg width="100" height="100">
-			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />  
-		</svg> 
+  <h2>SVG</h2>
+  <svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />  
+  </svg> 
   </section>
 </body>
 </html>

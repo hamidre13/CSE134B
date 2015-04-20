@@ -3,27 +3,50 @@
 <head>
   <title>Grouping Elements</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <h1>Grouping Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="#p_info">&lt;p&gt;</a></li>
+        <li><a href="#hr_info">&lt;hr&gt;</a></li>
+        <li><a href="#pre_info">&lt;pre&gt;</a></li>
+        <li><a href="#blockquote_info">&lt;blockquote&gt;</a></li>
+        <li><a href="#ol_info">&lt;ol&gt;</a></li>
+        <li><a href="#ul_info">&lt;ul&gt;</a></li>
+        <li><a href="#li_info">&lt;li&gt;</a></li>
+        <li><a href="#dl_info">&lt;dl&gt;</a></li>
+        <li><a href="#dt_info">&lt;dt&gt;</a></li>
+        <li><a href="#dt_info">&lt;dt&gt;</a></li>
+        <li><a href="#dd_info">&lt;dd&gt;</a></li>
+        <li><a href="#figure_info">&lt;figure&gt;</a></li>
+        <li><a href="#figcaption_info">&lt;figcaption&gt;</a></li>
+        <li><a href="#div_info">&lt;div&gt;</a></li>
+        <li><a href="#main_info">&lt;main&gt;</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
+  <main id="main_info">
     <section>
       <h2>Paragraph</h2>
-      <p>
+      <p id="p_info">
 	This is a paragraph. It's a basic grouping element, holding a paragraph. It is not a
 	general container of text, however. We use other tags where other tags are more
 	appropriate.
       <p>
-      <hr/>
+      <hr id="hr_info"/>
       <p>
 	That was a thematic break in our content. Therefore, I used the &lt;hr&gt; tag.
       </p>
     </section>
     <section>
       <h2>Pre-formatted</h2>
-      <pre>&lt;pre&gt; contains preformatted text. It's awesome for drawing ascii art.
+      <pre id="pre_info">&lt;pre&gt; contains preformatted text. It's awesome for drawing ascii art.
 		_
 	       /(|
 	      (  :
@@ -37,92 +60,89 @@
     <section>
       <h2>Blockquotes</h2>
       <figure>
-	<blockquote>
-	  This is a blockquote. Blockquotes are used for information that is quoted from another source
-	</blockquote>
-	<footer>
-	  - <cite class="author">Abraham Lincoln</cite>
-	</footer>
+        <blockquote id="blockquote_info">
+          This is a blockquote. Blockquotes are used for information that is quoted from another source
+        </blockquote>
+        <footer>
+          - <cite class="author">Abraham Lincoln</cite>
+        </footer>
       </figure>
     </section>
     <section>
-      <h2>Ordered-Lists</h2>
+      <h2 id="ol_info">Ordered-Lists</h2>
       <ol>
-	<li>Item 1
-	<li>Item 2
-	<li>Item 3
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
       </ol>
       <ol type="A">
-	<li>Item A
-	<li>Item B
-	<li>Item C
+        <li>Item A
+        <li>Item B
+        <li>Item C
       </ol>
-<<<<<<< HEAD
       <ol start="5">
-	<li>Item 1
-	<li>Item 2
-	<li>Item 3
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
       </ol>
       <ol reversed>
-	<li>Item 1
-	<li>Item 2
-	<li>Item 3
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
       </ol>
-=======
->>>>>>> 82833a5a5788873d02f2c69951f7092aa9344f5e
     </section>
     <section>
-      <h2>Unordered-Lists</h2>
+      <h2 id="ul_info">Unordered-Lists</h2>
       <ul>
-	<li>Item 1
-	<li>Item 2
-	<li>Item 3
+        <li id="li_info">Item 1
+        <li>Item 2
+        <li>Item 3
       </ul>
     </section>
     <section>
       <h2>List-Item</h2>
       <ol>
-	<li value="4">Item 1
-	<li value="2">Item 2
-	<li value="3">Item 3
-	<li value="1">Item 4
+        <li value="4">Item 1
+        <li value="2">Item 2
+        <li value="3">Item 3
+        <li value="1">Item 4
       </ol>
     </section>
     <section>
       <h2>Association Lists</h2>
-      <dl>
-	<dt>Tags
-	<dd>p
-	<dd>hr
-	<dd>ol
-	<dd>ul
-	<dd>dt
-	<dt>People
+      <dl id="dl_info">
+        <dt id="dt_info">Tags
+        <dd id="dd_info">p
+        <dd>hr
+        <dd>ol
+        <dd>ul
+        <dd>dt
+        <dt>People
 	<dd>Eugene
       </dl>
     </section>
     <section>
-      <h2>Figure</h2>
+      <h2 id="figure_info">Figure</h2>
       <figure>
-	<pre><code>&lt;figure&gt;Wow, this is so meta...&lt;/figure&gt;</code></pre>
+        <pre><code>&lt;figure&gt;Wow, this is so meta...&lt;/figure&gt;</code></pre>
       </figure>
     </section>
     <section>
-      <h2>Figure Caption</h2>
+      <h2 id="figcaption_info">Figure Caption</h2>
       <figure>
-	<figcaption>This is a caption for a figure...</figcaption>
+        <figcaption>This is a caption for a figure...</figcaption>
       </figure>
     </section>
     <section>
-      <h2>Div</h2>
+      <h2 id="div_info">Div</h2>
       <div>
-	I hold blocked content!
+        I hold blocked content!
       </div>
     </section>
     <section>
       <h2>Main</h2>
       <p>
-	Main content of the document... Used around the main content :-)...
+        Main content of the document... Used around the main content :-)...
       </p>
     </section>
   </main>

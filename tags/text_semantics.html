@@ -3,14 +3,52 @@
 <head>
   <title>Text Semantics Elements</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <h1>Text Semantics Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="a_info">&lt;a&gt;</a></li>
+        <li><a href="em_info">&lt;em&gt;</a></li>
+        <li><a href="strong_info">&lt;strong&gt;</a></li>
+        <li><a href="small_info">&lt;small&gt;</a></li>
+        <li><a href="s_info">&lt;s&gt;</a></li>
+        <li><a href="cite_info">&lt;cite&gt;</a></li>
+        <li><a href="q_info">&lt;q&gt;</a></li>
+        <li><a href="dfn_info">&lt;dfn&gt;</a></li>
+        <li><a href="abbr_info">&lt;abbr&gt;</a></li>
+        <li><a href="data_info">&lt;data&gt;</a></li>
+        <li><a href="time_info">&lt;time&gt;</a></li>
+        <li><a href="code_info">&lt;code&gt;</a></li>
+        <li><a href="var_info">&lt;var&gt;</a></li>
+        <li><a href="samp_info">&lt;samp&gt;</a></li>
+        <li><a href="kbd_info">&lt;kbd&gt;</a></li>
+        <li><a href="sub_sup_info">&lt;sub&gt; &lt;sup&gt;</a></li>
+        <li><a href="i_info">&lt;i&gt;</a></li>
+        <li><a href="b_info">&lt;b&gt;</a></li>
+        <li><a href="u_info">&lt;u&gt;</a></li>
+        <li><a href="mark_info">&lt;mark&gt;</a></li>
+        <li><a href="ruby_info">&lt;ruby&gt;</a></li>
+        <li><a href="ruby_info">&lt;rb&gt;</a></li>
+        <li><a href="ruby_info">&lt;rt&gt;</a></li>
+        <li><a href="ruby_info">&lt;rtc&gt;</a></li>
+        <li><a href="ruby_info">&lt;rp&gt;</a></li>
+        <li><a href="bdi_info">&lt;bdi&gt;</a></li>
+        <li><a href="bdo_info">&lt;bdo&gt;</a></li>
+        <li><a href="span_info">&lt;span&gt;</a></li>
+        <li><a href="br_info">&lt;br&gt;</a></li>
+        <li><a href="wbr_info">&lt;wbr&gt;</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section>
-      <h2>A</h2>
+      <h2 id="a_info">A</h2>
       <p>
         &lt;a&gt; stands for <a href="http://www.w3.org/TR/html5/text-level-semantics.html#text-level-semantics">anchor</a>...<br />
         &lt;a&gt; can also open tabs <a href="text_semantics.html" target="_blank">anchor</a>...<br />
@@ -21,19 +59,19 @@
       </p>
     </section>
     <section>
-      <h2>Em</h2>
+      <h2 id="em_info">Em</h2>
       <p>
         Allow me to <em>emphasize</em> this crucial piece of information.
       </p>
     </section>
     <section>
-      <h2>Strong</h2>
+      <h2 id="strong_info">Strong</h2>
       <p>
         Joe went to the Gym...<br />
         Now look at <strong>Joe</strong>.
     </section>
     <section>
-      <h2>Small</h2>
+      <h2 id="small_info">Small</h2>
       <p>
         I am a cat... To me <small>mice</small> are small...
         Small is used mostly for making something such as side comments appearn
@@ -41,13 +79,13 @@
       </p>
     </section>
     <section>
-      <h2>S</h2>
+      <h2 id="s_info">S</h2>
       <p>
         s is for <s>sarcasm</s> strikethrough...
       </p>
     </section>
     <section>
-      <h2>Cite</h2>
+      <h2 id="cite_info">Cite</h2>
       <blockquote>
         The cite element represents a reference to a creative work. It must 
         include the title of the work or the name of the author(person, people 
@@ -57,134 +95,142 @@
       </blockquote>
     </section>
     <section>
-    
-    <h2>Details</h2>
-    <details><p>Some detials herer</p></details>
-      <h2>Q</h2>
+      <h2 id="q_info">Q</h2>
       <p>
         <q>Wow, I can quote things now!</q> exclaims Eugene.  
         <q cite="Eugene">Wow, I can cite things inline now!</q> exclaims Eugene.  
       </p>
     </section>
     <section>
-      <h2>Dfn</h2>
+      <h2 id="dfn_info">Dfn</h2>
       <p>
         <dfn><abbr title="That Feel When">TFW</abbr></dfn>
         the abbrievation tag magically expands...
       </p>
     </section>
     <section>
-      <h2>Abbr</h2>
+      <h2 id="abbr_info">Abbr</h2>
       <p>
         <abbr title="That Feel When">TFW</abbr>
         you don't have to use &lt;dfn&gt; while using &lt;abbr&gt;.
       </p>
     </section>
     <section>
-      <h2>Data</h2>
+      <h2 id="data_info">Data</h2>
       <p>The <data value="9001">amount</data> of data is over 9000!</p>
     </section>
     <section>
-      <h2>Time</h2>
+      <h2 id="time_info">Time</h2>
       <p>The current time is <time>03:30</time></p>
       <p>The current time is <time datetime="03:00">Three Thirty</time></p>
     </section>
     <section>
-      <h2>Code</h2>
+      <h2 id="code_info">Code</h2>
       <pre><code class="language-cpp">#include&lt;stdio.h&gt;
 int main(void) { printf("Hello World\n"); }
       </code></pre>
     </section>
     <section>
-      <h2>Var</h2>
+      <h2 id="var_info">Var</h2>
       <p>
         The integral of <var>x</var> is <var>x</var>^2
       </p>
     </section>
     <section>
-      <h2>Samp</h2>
+      <h2 id="samp_info">Samp</h2>
       <p>
         I looked on the screen. All it said was <samp>All your base are belong to us</samp>.
       </p>
     </section>
     <section>
-      <h2>Sup and Sub</h2>
+      <h2 id="sup_sub_info">Sup and Sub</h2>
       <p>
         Some words should be <sub>subbed</sub> while others should be <sup>supped</sup>!
       </p>
     </section>
     <section>
-      <h2>Kbd</h2>
+      <h2 id="kbd_info">Kbd</h2>
       <p>
         To make your character jump, press the <kbd>Z-button</kbd> on your controller.
       </p>
     </section>
     <section>
-      <h2>I</h2>
+      <h2 id="i_info">I</h2>
       <p>
         The phrase, <i>Gong Xi Fa Cai</i> means happy new year in Chinese.
       </p>
     </section>
     <section>
-      <h2>B</h2>
+      <h2 id="b_info">B</h2>
       <p>
         Me utilitarian...<br />
         Me <b>important</b>
       </p>
     </section>
     <section>
-      <h2>U</h2>
+      <h2 id="u_info">U</h2>
       <p>
         When <u>u</u> want to <u>u</u>nderline, use the &lt;<u>u</u>&gt; tag.
       </p>
     </section>
     <section>
-      <h2>Mark</h2>
+      <h2 id="mark_info">Mark</h2>
       <p>
         Man, I wish there was a <mark>highligher</mark> for my computer.
       </p>
     </section>
     <section>
-      <h2>Ruby (and Ruby Annotations)</h2>
+      <h2 id="ruby_info">Ruby (and Ruby Annotations)</h2>
       <p>
-        <ruby>GNU<rt>(GNU Not Unix)</rt></ruby>
+        <ruby>
+          G <rp>(</rp><rt>GNU</rt><rp>)</rp>
+          N <rp>(</rp><rt>Not</rt><rp>)</rp>
+          U <rp>(</rp><rt>Unix</rt><rp>)</rp>
+        </ruby>
+        <!-- Not supported by validator or most browsers
+        <ruby>
+           <rb>G</rb>
+           <rb>O</rb>
+           <rb>D</rb>
+           <rt>God</rt>
+           <rt>Of</rt>
+           <rt>Djinn</rt>
+           <rtc>GEB</rtc>
+        </ruby>
+        -->
       </p>
     </section>
     <section>
-      <h2>Bdi</h2>
+      <h2 id="bdi_info">Bdi</h2>
       <p>
       <bdi lang="en">Amazing</bdi> is a phrase in English read from left to right.
       </p>
     </section>
     <section>
-      <h2>Bdo</h2>
+      <h2 id="bdo_info">Bdo</h2>
       <p>
         <bdo dir="rtl">Look at me, I can write thing backwards...</bdo>
       </p>
     </section>
     <section>
-      <h2>Span</h2>
+      <h2 id="span_info">Span</h2>
       <p>
         A span is a <span lang="en" style="color: red;">generic container</span> that holds inline text...
       </p>
     </section>
     <section>
-      <h2>Br</h2>
+      <h2 id="br_info">Br</h2>
       <p>
         Nothing to see here...
         Just taking a <br>.
       </p>
     </section>
     <section>
-      <h2>Wbr</h2>
+      <h2 id="wbr_info">Wbr</h2>
       <p>
         Sometimes you have really long words or sentences like <wbr>ono<wbr>mono<wbr>peia<wbr> and you want to let the compiler know
         where it can break the line up.
       </p>
-    </section>
-    <section>
-    <h2>summary</h2>
-      <summary>And this is the whole summary</summary>
     </section>
   </main>
 </body>

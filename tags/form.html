@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>Form Examples</title>
-  <meta name="forms" content="examples for cse 134b">
+  <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>Form Elements</h1>
-  <form>
+  <header>
+    <h1>Form Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="#form_info">&lt;form&gt;</a></li>
+        <li><a href="#form_info">&lt;label&gt;</a></li>
+        <li><a href="#form_info">&lt;input&gt;</a></li>
+        <li><a href="#button_info">&lt;button&gt;</a></li>
+        <li><a href="#select_info">&lt;select&gt;</a></li>
+        <li><a href="#datalist_info">&lt;datalist&gt;</a></li>
+        <li><a href="#optgroup_info">&lt;optgroup&gt;</a></li>
+        <li><a href="#optgroup_info">&lt;option&gt;</a></li>
+        <li><a href="#textarea_info">&lt;textarea&gt;</a></li>
+        <li><a href="#keygen_info">&lt;keygen&gt;</a></li>
+        <li><a href="#output_info">&lt;output&gt;</a></li>
+        <li><a href="#progress_info">&lt;progress&gt;</a></li>
+        <li><a href="#progress_info">&lt;meter&gt;</a></li>
+        <li><a href="#fieldset_info">&lt;fieldset&gt;</a></li>
+        <li><a href="#fieldset_info">&lt;legend&gt;</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form id="form_info">
     <p><label>Type anything here this is just a regular input with no type:<input></label></p>
     <p><label>Type only 0's in here:<input pattern="0*"></label></p>
     <p><label>This is a button:<input type="button" value="Happy"></label></p>
@@ -29,13 +53,15 @@
     <p><label>This is input takes a color:<input type="color"></label></p>
     <p><label>This is input takes a boolean:<input type="checkbox"></label></p>
     <p><label>This is input uses an image:<input type="image" src="http://icons.iconarchive.com/icons/hopstarter/soft-scraps/128/Button-Add-icon.png" alt="Image Button" ></label></p>
-    <p><label>This is input takes a textarea:<br /><textarea name = "area" maxlength="10"></textarea></label></p>
-    <fieldset>
+    <p><label>This is input takes a textarea:<br /><textarea id="textarea_info" name = "area" maxlength="10"></textarea></label></p>
+    <fieldset id="fieldset_info">
       <legend>This is called the legend, which is where the question is supposed to be usually.</legend>
         <p><label><input type=radio name=size> This is a  with type radio </label></p>
         <p><label><input type=radio name=size> Radio buttons that go to same legend must have the same name </label></p>
         <p><label><input type=radio name=sizes> If you dont have the same name, you can click on two radio buttons like this one </label></p>
+        <p><label><output for="size">Meh</output> is the output</label></p>
     </fieldset>
+    <h2 id="select_info">Select</h2>
     <p><select>
       <option value="1"> Select </option>
       <option value="2"> Me </option>
@@ -49,27 +75,31 @@
       <option value="5"> Of </option>
       <option value="5"> Us </option>
     </select></p>
+    <h2 id="datalist_info">Datalist</h2>
+    <p><label>Autocompleted with awesome:<input list="awesome"></label></p>
     <datalist id="awesome">
       <option value="Awesome 1">Awesome 1
       <option value="Awesome 2">Awesome 2
     </datalist>
-    <p>This is a select element using datalist groups
-      <select>
-	<optgroup label="group 1">
-	  <option value="g1o1">G1O1
-	  <option value="g1o2">G1O2
-	<optgroup label="group 2">
-	  <option value="g2o1">G2O1
-	  <option value="g2o2">G2O2
-      </select> 
-    </p>
-    <p><label>Autocompleted with awesome:<input list="awesome"></label></p>
+    <h2 id="optgroup_info">OptGroup</h2>
+    <select>
+      <optgroup label="group 1">
+        <option value="g1o1">G1O1
+        <option value="g1o2">G1O2
+      <optgroup label="group 2">
+        <option value="g2o1">G2O1
+        <option value="g2o2">G2O2
+    </select> 
+    <h2 id="button_info">Buttons</h2>
     <p><button>Buttonerino!</button></p>
-    <p>This will generate a key! <keygen name="thekey"></p>
-    <p>Great progress being made: <progress value="0.5"></progress></p>
-    <p>Great meter being made: <meter value="0.5"></progress></p>
+
     <p><button type="reset">Reseterino!</button></p>
     <p><button type="submit">Submiterino!</button></p>
+    <h2 id="keygen_info">Keygen</h2>
+    <p>This will generate a key! <keygen name="thekey"></p>
+    <h2 id="progress_info">Bars</h2>
+    <p>Great progress being made: <progress value="0.5"></progress></p>
+    <p>Great meter being made: <meter value="0.8"></meter></p>
   </form>
 </body>
 </html>
