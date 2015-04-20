@@ -3,19 +3,29 @@
 <head>
   <title>Edit Elements</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <h1>Edit Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="ins_info">&lt;ins&gt;</a></li>
+        <li><a href="del_info">&lt;del&gt;</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <pre><code>
 #include &lt;stdio.h&gt;      
-<del datetime="2015-03-14">using namespace std;</del>
+<del id="del_info" datetime="2015-03-14">using namespace std;</del>
 
 int main(void)
 {
-<ins datetime="2015-03-14">printf("Hello, HTML5's Inserts and Deletes!\n");</ins>
+<ins id="ins_info" datetime="2015-03-14">printf("Hello, HTML5's Inserts and Deletes!\n");</ins>
 }
     </code></pre>
   </main>

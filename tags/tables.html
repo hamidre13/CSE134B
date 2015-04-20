@@ -1,176 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tabular Data</title>
+<title>Tabular Data</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <style>
-      table { border-collapse: collapse; border: solid thin; }
-      colgroup { border: solid thick; }
-	  td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
+  table { border-collapse: collapse; border: solid thin; }
+  colgroup { border: solid thick; }
+  td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
   </style>
 </head>
 <body>
   <header>
-    <h1>table</h1>
+    <h1>Table Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="#table_info">&lt;table&gt;</a></li>
+        <li><a href="#caption_info">&lt;caption&gt;</a></li>
+        <li><a href="#col_info">&lt;col&gt;</a></li>
+        <li><a href="#tbody_info">&lt;tbody&gt;</a></li>
+        <li><a href="#thead_info">&lt;thead&gt;</a></li>
+        <li><a href="#tfoot_info">&lt;tfoot&gt;</a></li>
+        <li><a href="#tr_info">&lt;tr&gt;</a></li>
+        <li><a href="#td_info">&lt;td&gt;</a></li>
+        <li><a href="#th_info">&lt;th&gt;</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section>
-      <h2>caption</h2>
-		<table>
-		 <caption>I am the caption of this table</caption>
-		 <thead>
-		  <tr>
-		   <th> Header1
-		   <th> Header2
-		   <th> Header3
-		 <tbody>
-		  <tr>
-		   <td> 1
-		   <td> 2
-		   <td> 3
-		  <tr>
-		   <td> 1
-		   <td> 2
-		   <td> 3
-		</table>    
+    <h2>caption</h2>
+    <table id="table_info">
+    <caption id="caption_info">I am the caption of this table</caption>
+    <thead>
+    <tr>
+    <th> Header1
+    <th> Header2
+    <th> Header3
+    <tbody>
+    <tr>
+    <td> 1
+    <td> 2
+    <td> 3
+    <tr>
+    <td> 1
+    <td> 2
+    <td> 3
+    </table>    
     </section>
     <section>
-      <h2>colgroup and col </h2>
-	 <table>
-	 <caption>There are two colgroups each with 2 col elements inside </caption>
-	  <colgroup><col><col>
-	  <colgroup><col><col>
-	  <tbody>
-	   <tr> <td> 1 <td>   <td> 3 <td> 6 
-	   <tr> <td>   <td> 2 <td>   <td>  
-	   <tr> <td> 7 <td>   <td>   <td>    
-	  <tbody>
-	   <tr> <td> 2 <td>   <td> 4 <td>   
-	   <tr> <td>   <td>   <td>   <td>   
-	   <tr> <td> 5 <td>   <td>6   <td> 9  
-	  <tbody>
-	   <tr> <td> 6 <td>   <td>   <td>  
-	   <tr> <td>   <td> 7  <td>   <td>     
-	   <tr> <td> 9 <td>   <td>   <td> 8 
-	 </table>
+    <h2 id="col_info">colgroup and col </h2>
+    <table>
+    <caption>There are two colgroups each with 2 col elements inside </caption>
+    <colgroup><col><col>
+    <colgroup><col><col>
+    <tbody>
+    <tr> <td> 1 <td>   <td> 3 <td> 6 
+    <tr> <td>   <td> 2 <td>   <td>  
+    <tr> <td> 7 <td>   <td>   <td>    
+    <tbody>
+    <tr> <td> 2 <td>   <td> 4 <td>   
+    <tr> <td>   <td>   <td>   <td>   
+    <tr> <td> 5 <td>   <td>6   <td> 9  
+    <tbody>
+    <tr> <td> 6 <td>   <td>   <td>  
+    <tr> <td>   <td> 7  <td>   <td>     
+    <tr> <td> 9 <td>   <td>   <td> 8 
+    </table>
     </section>
     <section>
-      <h2>tbody</h2>
-	 <table>
-	 <caption>The tbody element represents a block of rows that consist of a body of data for the parent table element  </caption>
-	  <tbody>
-	   <tr> <td> In <td> am <td> in <td> the <td> first  <td> tbody <td> element
-	  <tbody>
-	   <tr> <td> In <td> am <td> in <td> the <td> second  <td> tbody <td> element
-	  <tbody>
-	   <tr> <td> In <td> am <td> in <td> the <td> third  <td> tbody <td> element
-	 </table>
+    <h2 id="tbody_info">tbody</h2>
+    <table>
+    <caption>The tbody element represents a block of rows that consist of a body of data for the parent table element  </caption>
+    <tbody>
+    <tr> <td> In <td> am <td> in <td> the <td> first  <td> tbody <td> element
+    <tbody>
+    <tr> <td> In <td> am <td> in <td> the <td> second  <td> tbody <td> element
+    <tbody>
+    <tr> <td> In <td> am <td> in <td> the <td> third  <td> tbody <td> element
+    </table>
     </section>
     <section>
-      <h2>thead</h2>
-		<table>
-		 <caption> thead elements go after the caption but before the thead or tfoot elements </caption>
-		 <thead>
-		  <tr>
-		   <th><label for=e1>headers</label>
-		   <th><label for=e2>in</label>
-		   <th><label for=e3>thead</label>
- 		   <th><label for=e3>element</label>
-		  <tr>
-		   <td>Your name here
-		   <td>What are you selling?
-		   <td>Link to a picture
-		   <td>Your reserve price
-		 <tbody>
-		  <tr>
-		   <td>Ms Danus
-		   <td>Doughnuts
-		   <td>
-		   <td>$45
-		  <tr>
-		   <td><input id=e1 type=text name=who required form=f>
-		   <td><input id=e2 type=text name=what required form=f>
-		   <td><input id=e3 type=url name=pic form=f>
-		   <td><input id=e4 type=number step=0.01 min=0 value=0 required form=f>
-		</table>
-		<form id=g action="/auction.cgi">
-		 <input type=button name=add value="Submit">
-		</form>      
+    <h2 id="thead_info">thead</h2>
+    <table>
+    <caption> thead elements go after the caption but before the thead or tfoot elements </caption>
+    <thead>
+    <tr>
+    <th><label for=e1>headers</label>
+    <th><label for=e2>in</label>
+    <th><label for=e3>thead</label>
+    <th><label for=e3>element</label>
+    <tr>
+    <td>Your name here
+    <td>What are you selling?
+    <td>Link to a picture
+    <td>Your reserve price
+    <tbody>
+    <tr>
+    <td>Ms Danus
+    <td>Doughnuts
+    <td>
+    <td>$45
+    <tr>
+    <td><input id=e1 type=text name=who required form=f>
+    <td><input id=e2 type=text name=what required form=f>
+    <td><input id=e3 type=url name=pic form=f>
+    <td><input id=e4 type=number step=0.01 min=0 value=0 required form=f>
+    </table>
+    <form id=g action="/auction.cgi">
+    <input type=button name=add value="Submit">
+    </form>      
     </section>
     <section>
-      <h2>tfoot</h2>
-		<table>
-		 <caption>The tfoot element represents the block of rows that consist of the column summaries (footers) for the parent table element </caption>
-		  <tr>
-		   <td>Your name here
-		   <td>What are you selling?
-		   <td>Link to a picture
-		   <td>Your reserve price
-		 <tbody>
-		  <tr>
-		   <td>Ms Danus
-		   <td>Doughnuts
-		   <td>
-		   <td>$45
-		  <tr>
-		   <td><input id=e5 type=text name=who required form=f>
-		   <td><input id=e6 type=text name=what required form=f>
-		   <td><input id=e7 type=url name=pic form=f>
-		   <td><input id=e8 type=number step=0.01 min=0 value=0 required form=f>
-		 <tfoot>
-		  <tr>
-		   <th><label for=e1>Headers</label>
-		   <th><label for=e2>in</label>
-		   <th><label for=e3>tfoot</label>
- 		   <th><label for=e3>element</label>
-		</table>
-		<form id=f action="/auction.cgi">
-		 <input type=button name=add value="Submit">
-		</form> 
+    <h2 id="tfoot_info">tfoot</h2>
+    <table>
+    <caption>The tfoot element represents the block of rows that consist of the column summaries (footers) for the parent table element </caption>
+    <tr>
+    <td>Your name here
+    <td>What are you selling?
+    <td>Link to a picture
+    <td>Your reserve price
+    <tbody>
+    <tr>
+    <td>Ms Danus
+    <td>Doughnuts
+    <td>
+    <td>$45
+    <tr>
+    <td><input id=e5 type=text name=who required form=f>
+    <td><input id=e6 type=text name=what required form=f>
+    <td><input id=e7 type=url name=pic form=f>
+    <td><input id=e8 type=number step=0.01 min=0 value=0 required form=f>
+    <tfoot>
+    <tr>
+    <th><label for=e1>Headers</label>
+    <th><label for=e2>in</label>
+    <th><label for=e3>tfoot</label>
+    <th><label for=e3>element</label>
+    </table>
+    <form id=f action="/auction.cgi">
+    <input type=button name=add value="Submit">
+    </form> 
     </section>
     <section>
-      <h2>tr</h2>
-      <table>
-      <caption>The tr element represents a row of cells in a table. </caption>
-      <tbody>
-        <tr> 
-       	  <td>Row 1 in td data cell 1
-       	  <td> Row 1 in td data cell 2
-        <tr> 
-       	  <td>Row 2 in td data cell 1
-       	  <td> Row 2 in td data cell 2       	 
-        <tr> 
-       	  <td>Row 3 in td data cell 1
-       	  <td> Row 3 in td data cell 2       
-      </table>
+    <h2 id="tr_info">tr</h2>
+    <table>
+    <caption>The tr element represents a row of cells in a table. </caption>
+    <tbody>
+    <tr> 
+    <td>Row 1 in td data cell 1
+    <td> Row 1 in td data cell 2
+    <tr> 
+    <td>Row 2 in td data cell 1
+    <td> Row 2 in td data cell 2       	 
+    <tr> 
+    <td>Row 3 in td data cell 1
+    <td> Row 3 in td data cell 2       
+    </table>
     </section>
     <section>
-      <h2>th</h2>
-		<table>
-		 <caption> The th element represents a header cell in a table. </caption>
-		 <thead>
-		  <tr>
-		   <th><label for=e1>I</label>
-		   <th><label for=e2>am</label>
-		   <th><label for=e3>a</label>
- 		   <th><label for=e3> th element</label>
-      <tbody>
-        <tr> 
-       	  <td>Dummy
-       	  <td> Data1
-       	  <td> Data2
-       	  <td> Data3  
-        <tr> 
-       	  <td>Dummy
-       	  <td> Data1
-       	  <td> Data2
-       	  <td> Data3       	 
-        <tr> 
-       	  <td>Dummy
-       	  <td> Data1
-       	  <td> Data2
-       	  <td> Data3   
- 		 </table>
+    <h2 id="th_info">th</h2>
+    <table>
+    <caption> The th element represents a header cell in a table. </caption>
+    <thead>
+    <tr>
+    <th><label for=e1>I</label>
+    <th><label for=e2>am</label>
+    <th><label for=e3>a</label>
+    <th><label for=e3> th element</label>
+    <tbody>
+    <tr> 
+    <td>Dummy
+    <td> Data1
+    <td> Data2
+    <td> Data3  
+    <tr> 
+    <td>Dummy
+    <td> Data1
+    <td> Data2
+    <td> Data3       	 
+    <tr> 
+    <td>Dummy
+    <td> Data1
+    <td> Data2
+    <td> Data3   
+    </table>
     </section>       
   </main>
 </body>
