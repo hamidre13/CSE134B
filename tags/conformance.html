@@ -7,55 +7,218 @@
 </head>
 <body>
 <h1>Conformance Page</h1>
-<h3>Sections:</h3>
+<p>Given that Html5 has too many elements and attributes, we decided to highlight only the differences here. Following are the Highlighted differences:</p>
+
 <ul>
-    <li>All browsers seem to have basic support of all sections</li>
-</ul>
-<h3>Group Content</h3>
-<ul>
-    <li>“reversed” attribute does not work in Internet Explorer</li>
-</ul>
-<h3>Text Semantics</h3>
-<ul>
-    <li>Ruby
+    <li>
+    <p>a</p>
+
+    <ul>
+        <li>
+        <p>download attribute does not work on internet explorer</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>attr</p>
+
+    <ul>
+        <li>
+        <p>I.E. does not style the element</p>
+        </li>
+        <li>
+        <p>Firefox shows a dotted lunder underneath</p>
+        </li>
+        <li>
+        <p>Chrome does nothing, unless inside dfn tag</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>bdi</p>
+
+    <ul>
+        <li>
+        <p>I.E does not support the element</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>ol</p>
+
+    <ul>
+        <li>
+        <p>reverse attribute not working on I.E.</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>data</p>
+
+    <ul>
+        <li>
+        <p>Not supported by Chrome</p>
+        </li>
+        <li>
+        <p>Not supported by I.E.</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>q</p>
+
+    <ul>
+        <li>
+        <p>I.E. does not add quotes around the body</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>ruby</p>
+
+    <ul>
+        <li>
+        <p>Not supported by I.E.</p>
+        </li>
+        <li>
+        <p>Not supported by Firefox</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>video</p>
+
+    <ul>
+        <li>
+        <p>webm players appear different depending on browser</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>embed</p>
+
+    <ul>
+        <li>
+        <p>chrome does not have flash-player by default (on linux)</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>object</p>
+
+    <ul>
+        <li>
+        <p>typemustmatch tag only works for Firefox</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>keygen</p>
+
+    <ul>
+        <li>
+        <p>I.E. does not support keygen</p>
+        </li>
+        <li>
+        <p>Firefox only says &ldquo;Medium Grade&rdquo; or &ldquo;High Grade&rdquo;</p>
+        </li>
+        <li>
+        <p>Chrome says &ldquo;(1024) Medium Grade&rdquo; or &ldquo;(2048) High Grade&rdquo;</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>input</p>
+
+    <ul>
+        <li>
+        <p>color not supported on I.E.</p>
+        </li>
+        <li>
+        <p>date not supported on Firefox, I.E.</p>
+        </li>
+        <li>
+        <p>datetime not supported on Firefox, I.E., and Chrome</p>
+        </li>
+        <li>
+        <p>month not supported on Firefox, I.E.</p>
+        </li>
+        <li>
+        <p>number behaves differently</p>
+
         <ul>
-            <li>Not supported with I.E. and firefox it appears flat</li>
+            <li>
+            <p>On Chrome, up-down arrows appear when focused</p>
+            </li>
+            <li>
+            <p>On Firefox, up-down arrows always present</p>
+            </li>
         </ul>
+        </li>
+        <li>
+        <p>search</p>
+
+        <ul>
+            <li>
+            <p>Chrome has (x) that clears searchbar</p>
+            </li>
+            <li>
+            <p>Firefox does not</p>
+            </li>
+        </ul>
+        </li>
+        <li>
+        <p>week is not supported</p>
+        </li>
+    </ul>
     </li>
-</ul>
-<h3>Elements</h3>
-<ul>
     <li>
-    A, Area : Download attr:
+    <p>meter</p>
+
     <ul>
-        <li>Not supported in I.E.</li>
-    </ul>
-    A: Ping attr:
-    <ul>
-        <li>This attr is for marketing and tracking and it  is only supported by chrome and Firefox</li>
-    </ul>
-    Details & summary:
-    <ul>
-        <li>This element is only supported by chrome ,I.E did not show it at all and firefox renders it as regular tag</li>
+        <li>
+        <p>not supported on I.E.</p>
+        </li>
     </ul>
     </li>
-</ul>
-<h3>Forms</h3>
-<ul>
     <li>
-    input type=date, type=week, type=month , type = time , type=datetime-local , type = keygen
+    <p>output</p>
+
     <ul>
-        <li>only supported by chrome</li>
+        <li>
+        <p>not supported on I.E.</p>
+        </li>
     </ul>
-    input type=color
+    </li>
+    <li>
+    <p>select</p>
+
     <ul>
-        <li>I.E. Does not support it</li>
+        <li>
+        <p>looks between Chrome and Firefox different</p>
+        </li>
+    </ul>
+    </li>
+    <li>&nbsp;</li>
+    <li>
+    <p>caption</p>
+
+    <ul>
+        <li>
+        <p>Firefox captions not visible for audio only files</p>
+        </li>
+    </ul>
+    </li>
+    <li>
+    <p>details</p>
+
+    <ul>
+        <li>
+        <p>not supported in I.E. or Firefox</p>
+        </li>
     </ul>
     </li>
 </ul>
-<h3>Microdata</h3>
-<ul>
-    <li>Only supported by firefox</li>
-</ul>
+
 </body>
 </html>
