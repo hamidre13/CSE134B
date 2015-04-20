@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Form Examples</title>
+  <meta name="forms" content="examples for cse 134b">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Form Elements</h1>
+  <form>
+    <p><label>Type anything here this is just a regular input with no type:<input></label></p>
+    <p><label>Type only 0's in here:<input pattern="0*"></label></p>
+    <p><label>This is a button:<input type="button" value="Happy"></label></p>
+    <p><label>Now it's disabled:<input type="button" value="Sad" disabled></label></p>
+    <p><label>This input takes a password:</label></p>
+    <p><label>This is input for telephones, which is required:<input type="tel" required></label></p>
+    <p><label>This is input for url, which is required:<input type="url" required></label></p>
+    <p><label>This is input for search, which is required:<input type="search" required></label></p>
+    <p><label>This is input for email, which is required:<input type="email" placeholder="me@me.com" required></label></p>
+    <p><label>This is input for email, now with multiple:<input type="email" multiple></label></p>
+    <p><label>This is input is hidden:<input type="hidden"></label></p>
+    <p><label>This is input takes a month:<input type="month"></label></p>
+    <p><label>This is input takes a week:<input type="week"></label></p>
+    <p><label>This is input takes a date:<input type="date"></label></p>
+    <p><label>This is input takes a datetime:<input type="datetime"></label></p>
+    <p><label>This is input takes a time:<input type="time" min="10:00" max="22:00" step="60"></label></p>
+    <p><label>This is input takes a number:<input type="number"></label></p>
+    <p><label>This is input takes a range:<input type="range"></label></p>
+    <p><label>This is input takes a color:<input type="color"></label></p>
+    <p><label>This is input takes a boolean:<input type="checkbox"></label></p>
+    <p><label>This is input uses an image:<input type="image" src="http://icons.iconarchive.com/icons/hopstarter/soft-scraps/128/Button-Add-icon.png" alt="Image Button" ></label></p>
+    <p><label>This is input takes a textarea:<br /><textarea name = "area" maxlength="10"></textarea></label></p>
+    <fieldset>
+      <legend>This is called the legend, which is where the question is supposed to be usually.</legend>
+        <p><label><input type=radio name=size> This is a  with type radio </label></p>
+        <p><label><input type=radio name=size> Radio buttons that go to same legend must have the same name </label></p>
+        <p><label><input type=radio name=sizes> If you dont have the same name, you can click on two radio buttons like this one </label></p>
+    </fieldset>
+    <p><select>
+      <option value="1"> Select </option>
+      <option value="2"> Me </option>
+      <option value="3" selected> Please </option>
+    </select></p>
+    <p><select multiple>
+      <option value="1"> You </option>
+      <option value="2"> Can </option>
+      <option value="3" selected> Select </option>
+      <option value="4" selected> Multiple </option>
+      <option value="5"> Of </option>
+      <option value="5"> Us </option>
+    </select></p>
+    <datalist id="awesome">
+      <option value="Awesome 1">Awesome 1
+      <option value="Awesome 2">Awesome 2
+    </datalist>
+    <p>This is a select element using datalist groups
+      <select>
+	<optgroup label="group 1">
+	  <option value="g1o1">G1O1
+	  <option value="g1o2">G1O2
+	<optgroup label="group 2">
+	  <option value="g2o1">G2O1
+	  <option value="g2o2">G2O2
+      </select> 
+    </p>
+    <p><label>Autocompleted with awesome:<input list="awesome"></label></p>
+    <p><button>Buttonerino!</button></p>
+    <p>This will generate a key! <keygen name="thekey"></p>
+    <p>Great progress being made: <progress value="0.5"></progress></p>
+    <p><button type="reset">Reseterino!</button></p>
+    <p><button type="submit">Submiterino!</button></p>
+  </form>
+</body>
+</html>
