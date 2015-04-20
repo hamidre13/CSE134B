@@ -3,104 +3,109 @@
 <head>
   <title>Sections</title>
   <meta charset="UTF-8">
-  <style>
-    /* Embedded stylesheet here */
-  </style>
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <h1>Section Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
     <nav>
-      <h2>Navigation</h2>
+      <h2>Elements Used:</h2>
       <ul>
-	<li><a href="#body_info">&lt;body&gt;</a></li>
-	<li><a href="#article_info">&lt;article&gt;</a></li>
-	<li><a href="#section_info">&lt;section&gt;</a></li>
-	<li><a href="#nav_info">&lt;nav&gt;</a></li>
-	<li><a href="#aside_info">&lt;aside&gt;</a></li>
-	<li><a href="#h1_6_info">&lt;h1...h6&gt;</a></li>
-	<li><a href="#header_info">&lt;header&gt;</a></li>
-	<li><a href="#footer_info">&lt;footer&gt;</a></li>
-	<li><a href="#address_info">&lt;address&gt;</a></li>
+        <li><a href="#body_info">&lt;body&gt;</a></li>
+        <li><a href="#article_info">&lt;article&gt;</a></li>
+        <li><a href="#section_info">&lt;section&gt;</a></li>
+        <li><a href="#nav_info">&lt;nav&gt;</a></li>
+        <li><a href="#aside_info">&lt;aside&gt;</a></li>
+        <li><a href="#h1_6_info">&lt;h1...h6&gt;</a></li>
+        <li><a href="#header_info">&lt;header&gt;</a></li>
+        <li><a href="#footer_info">&lt;footer&gt;</a></li>
+        <li><a href="#address_info">&lt;address&gt;</a></li>
       </ul>
     </nav>
   </header>
-  <article>
-    <section id="body_info">
-      <h2>Body</h2>
+  <section id="body_info">
+    <h2>Body</h2>
+    <p>
+  The body is a semantic element that contains all the content of the document.
+    </p>
+  </section>
+  <section id="article_info">
+    <h2>Article</h2>
+    <p>
+    <article>
+      <h3>Article on Articles</h3>
       <p>
-	The body is a semantic element that contains all the content of the document.
+        An article is a semantic element which represents a part of the article that is self contained
+        and can be syndicated. There can be many articles in a document.
       </p>
-    </section>
-    <section id="article_info">
-      <h2>Article</h2>
-      <p>
-	An article is a semantic element which represents a part of the article that is self contained
-	and can be syndicated. There can be many articles in a document.
-      </p>
-    </section>
-    <section id="section_info">
-      <h2>Section</h2>
-      <p>
-	A section is a semantic element that represents a categorical grouping of information.
-      </p>
-    </section>
-    <section id="nav_info">
-      <h2>Navigation</h2>
-      <p>
-	A nav section is a semantic element that show which links are navigational links.
-      </p>
-    </section>
-    <aside>
-      <h2>But what about the children?</h2>
-      <p>What children?</p>
+    </article>
+  </section>
+  <section id="section_info">
+    <h2>Section</h2>
+    <p>
+  A section is a semantic element that represents a categorical grouping of information.
+    </p>
+  </section>
+  <section id="nav_info">
+    <h2>Navigation</h2>
+    <p>
+  A nav section is a semantic element that show which links are navigational links.
+    </p>
+  </section>
+  <aside>
+    <h2>But what about the children?</h2>
+    <p>What children?</p>
+    <section>
+  <h3>The important children</h3>
+  <p>I don't know what you're talking about.</p>
+  <section>
+    <h4>I'm sure it's important...</h4>
+    <p>Probably not.</p>
+    <section>
+      <h5>You're right!</h5>
+      <p>Okay, why is that?</p>
       <section>
-	<h3>The important children</h3>
-	<p>I don't know what you're talking about.</p>
-	<section>
-	  <h4>I'm sure it's important...</h4>
-	  <p>Probably not.</p>
-	  <section>
-	    <h5>You're right!</h5>
-	    <p>Okay, why is that?</p>
-	    <section>
-	      <h6>Because this is an aside!</h6>
-	      <p>Amazing, and look, I used all 6 header tags!</p>
-	    </section>
-	  </section>
-	</section>
+        <h6>Because this is an aside!</h6>
+        <p>Amazing, and look, I used all 6 header tags!</p>
       </section>
-    </aside>
-    <section id="aside_info">
-      <h2>Aside</h2>
-      <p>
-	An aside is a semantic element that holds information that may not be directly related to the
-	container it is in.
-      </p>
     </section>
-    <section id="h_1_6_info">
-      <h2>H1-6</h2>
-      <p>There simply represent headers of a section/grouping.</p>
+  </section>
     </section>
-    <section id="header_info">
-      <h2>Header</h2>
-      <p>
-	The header is a semantic element that contains introductory information about the container it is in.
-      </p>
-    </section>
-    <section id="footer_info">
-      <h2>Footer</h2>
-      <p>
-	The footer is a semantic element that contains the &ldquo;footer&rdquo; of its container... okay.
-      </p>
-    </section>
-    <section id="address_info">
-      <h2>Address</h2>
-      <p>
-	The address is a semantic element that contains the contact information of the writer of the content.
-      </p>
-    </section>
-  </article>
+  </aside>
+  <section id="aside_info">
+    <h2>Aside</h2>
+    <p>
+  An aside is a semantic element that holds information that may not be directly related to the
+  container it is in.
+    </p>
+  </section>
+  <section id="h1_6_info">
+    <h2>H1-6</h2>
+    <p>These simply represent headers of a section/grouping.</p>
+    <p>
+      They are located in the &lt;aside&gt; tag.
+    </p>
+  </section>
+  <section id="header_info">
+    <h2>Header</h2>
+    <p>
+  The header is a semantic element that contains introductory information about the container it is in.
+    </p>
+  </section>
+  <section id="footer_info">
+    <h2>Footer</h2>
+    <p>
+  The footer is a semantic element that contains the &ldquo;footer&rdquo; of its container... okay.
+    </p>
+  </section>
+  <section id="address_info">
+    <h2>Address</h2>
+    <p>
+  The address is a semantic element that contains the contact information of the writer of the content.
+    </p>
+  </section>
   <footer>
     <h1>More About Us...</h1>
     <p>

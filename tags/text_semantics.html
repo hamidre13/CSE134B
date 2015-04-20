@@ -3,10 +3,48 @@
 <head>
   <title>Text Semantics Elements</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Team Pup N' Suds">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
     <h1>Text Semantics Elements</h1>
+    <p><a href="index.html">Back to Main Page</a></p>
+    <nav>
+      <h2>Elements Used:</h2>
+      <ul>
+        <li><a href="a_info">&lt;a&gt;</a></li>
+        <li><a href="em_info">&lt;em&gt;</a></li>
+        <li><a href="strong_info">&lt;strong&gt;</a></li>
+        <li><a href="small_info">&lt;small&gt;</a></li>
+        <li><a href="s_info">&lt;s&gt;</a></li>
+        <li><a href="cite_info">&lt;cite&gt;</a></li>
+        <li><a href="q_info">&lt;q&gt;</a></li>
+        <li><a href="dfn_info">&lt;dfn&gt;</a></li>
+        <li><a href="abbr_info">&lt;abbr&gt;</a></li>
+        <li><a href="data_info">&lt;data&gt;</a></li>
+        <li><a href="time_info">&lt;time&gt;</a></li>
+        <li><a href="code_info">&lt;code&gt;</a></li>
+        <li><a href="var_info">&lt;var&gt;</a></li>
+        <li><a href="samp_info">&lt;samp&gt;</a></li>
+        <li><a href="kbd_info">&lt;kbd&gt;</a></li>
+        <li><a href="sub_sup_info">&lt;sub&gt; &lt;sup&gt;</a></li>
+        <li><a href="i_info">&lt;i&gt;</a></li>
+        <li><a href="b_info">&lt;b&gt;</a></li>
+        <li><a href="u_info">&lt;u&gt;</a></li>
+        <li><a href="mark_info">&lt;mark&gt;</a></li>
+        <li><a href="ruby_info">&lt;ruby&gt;</a></li>
+        <li><a href="rb_info">&lt;rb&gt;</a></li>
+        <li><a href="rt_info">&lt;rt&gt;</a></li>
+        <li><a href="rtc_info">&lt;rtc&gt;</a></li>
+        <li><a href="rp_info">&lt;rp&gt;</a></li>
+        <li><a href="bdi_info">&lt;bdi&gt;</a></li>
+        <li><a href="bdo_info">&lt;bdo&gt;</a></li>
+        <li><a href="span_info">&lt;span&gt;</a></li>
+        <li><a href="br_info">&lt;br&gt;</a></li>
+        <li><a href="wbr_info">&lt;wbr&gt;</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section>
@@ -57,9 +95,6 @@
       </blockquote>
     </section>
     <section>
-    
-    <h2>Details</h2>
-    <details><p>Some detials herer</p></details>
       <h2>Q</h2>
       <p>
         <q>Wow, I can quote things now!</q> exclaims Eugene.  
@@ -147,7 +182,20 @@ int main(void) { printf("Hello World\n"); }
     <section>
       <h2>Ruby (and Ruby Annotations)</h2>
       <p>
-        <ruby>GNU<rt>(GNU Not Unix)</rt></ruby>
+        <ruby>
+          <rbc>
+            <rb>G
+            <rb>N
+            <rb>U
+          <rbc>
+          <rp>(
+          <rtc>
+            <rt>GNU 
+            <rt>Not 
+            <rt>Unix
+          </rtc>
+          <rp>)
+        </ruby>
       </p>
     </section>
     <section>
@@ -181,10 +229,6 @@ int main(void) { printf("Hello World\n"); }
         Sometimes you have really long words or sentences like <wbr>ono<wbr>mono<wbr>peia<wbr> and you want to let the compiler know
         where it can break the line up.
       </p>
-    </section>
-    <section>
-    <h2>summary</h2>
-      <summary>And this is the whole summary</summary>
     </section>
   </main>
 </body>
