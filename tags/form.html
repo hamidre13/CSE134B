@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form examples</title>
+        <meta name="forms" content="examples for cse 134b">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <h1>Hello</h1>
+        
+        <form>
+            <p><label>type anything here this is just a regular input with no type: <input></label></p>
+            <p><label>this is input for telephones i put required in the input so it wont submit unless you put something here <input type=tel required></label></p>
+            <p><label>this has input type for email so must have an @ symbol or will throw an error when submitted also required to test things <input type=email required></label></p>
+            <fieldset>
+                <legend> This is called the legend, which is where the question is supposed to be usually </legend>
+                <p><label> <input type=radio name=size> this is a  with type radio </label></p>
+                <p><label> <input type=radio name=size> radio buttons that go to same legend must have the same name </label></p>
+                <p><label> <input type=radio name=sizes> if you dont have the same name, you can click on two radio buttons like this one </label></p>
+            </fieldset>
+            
+            <fieldset>
+                <legend> This is start of a new fieldset, the fieldset makes those boxes around everything that's in it </legend>
+                <p><label> <input type=checkbox> this is an input type of checkbox </label></p>
+                <p><label> <input type=checkbox> checkboxes dont take in a name since you can click multiple checkboxes </label></p>
+                <p><label> <input type=checkbox> i like checkboxes </label></p>
+                <p><label> <input type=checkbox> i love checkboxes </label></p>
+            </fieldset>
+            
+            <p><label>This is input type of time, for this specific one, there's a min value of 10, max value of 22, and a step value of 60, which is the seconds between each time. If not within the min and max value, when you click the button it will throw an error  <input type=time min="10:00" max="22:00" step="60"></label></p>
+            
+            <p><label>this shows a text area where people are free to put whatever they want i put a max character length of 10 here <textarea name = "area" maxlength="10"></textarea></label></p>
+            
+            <p><label>this is a search box it has an x where you can delete the entire text<input type=search></label></p>
+            
+            <p><label> this is a hidden input type right here -> <input type=hidden></label></p>
+            
+            <p><label>this is an input type of date which can be used for birthdays <input type=date> </label></p>
+            
+            <p><label>this is an input type of month<input type=month> </label></p>
+            
+            <p><label>this is an input type of week<input type=week> </label></p>
+            
+            <p><label>this is an input type of number, so only numbers can be entered here or else after they hit submit it will prompt the user<input type=number> </label></p>
+            
+            <p><label>this is an input type of range the default min is 0 and default max is 100, it could be changed though. steps is default by 1 needs javascript to show the range number <input type=range> </label></p>
+            
+            <p><label>this is an input type of color!<input type=color> </label></p>
+            
+            <p><label>this is an image button that has a src to set the image. it works the same as the button but it is an input with type image instead<input type=image alt ="sorry no image" src = "http://icons.iconarchive.com/icons/hopstarter/soft-scraps/128/Button-Add-icon.png"> </label></p>
+            
+            <p><button>Submit order</button></p>
+            
+            
+        </form>
+    </body>
+
+</html>
